@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Home | Pie Shop</title>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <img src="images/logo.svg" alt="Logo">
+                <h1>Bethanys</h1>
+                <h2>Fantastic Pie Shop</h2>
+            </section>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <div class="row limited">
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Specials</a></li>
+                <li><a href="#">Cheese Cakes</a></li>
+                <li><a href="#">Fruit Pies</a></li>
+                <li><a href="#">Swag Shop</a></li>
+            </ul>
+        </div><!-- end row -->
+    </nav>
+    <main class="clearfix">
+        <div class="row limited">
+            <section class="column small-12">
+                <img src="images/hero.jpg" alt="Bethany" width="1140" height="562">
+            </section>
+        </div>
+
+        <div class="row limited">
+            <section class="column small-12">
+                <h1>This Week´s Specials </h1>
+            </section>
+        </div>
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3 labeled">
+                <h6>Apple Pie</h6>
+                <img src="images/apple_pie.jfif" alt="apple pie">
+                <p>SALE: $19.29</p>
+            </section>
+            
+            <section class="column small-12 medium-6 large-3 labeled">
+                <h6>Cheese Cake</h6>
+                <img src="images/cheese_cake.jfif" alt="Cheese Cake">
+                <p>SALE: $19.29</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About</h2>
+            </section>
+        </div><!-- end of the row -->
+
+    </footer>
+</body>
+<script>
+    function toggleMenu(){
+        document.getElementById('primaryNav').classList.toggle("open");
+    }
+    let x = document.getElementById("hamburgerBtn")
+    x.onclick = toggleMenu
+</script>
+</html>
